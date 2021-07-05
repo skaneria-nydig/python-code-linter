@@ -1,0 +1,76 @@
+name: "pyLinter"
+description: "pyLinter, Lont Your Python code"
+inputs:
+  src:
+    description: "A list of all paths to test"
+    required: false
+    default: "."
+  use-pylint:
+    description: "Use Pylint"
+    required: false
+    default: true
+  use-pycodestyle:
+    description: "Use pycodestyle"
+    required: false
+    default: true
+  use-flake8:
+    description: "Use Flake8"
+    required: false
+    default: true
+  use-black: and
+    description: "Use Black"
+    required: false
+    default: true
+  use-mypy:
+    description: "Use mypy"
+    required: false
+    default: true
+  use-isort:
+    description: "Use isort"
+    required: false
+    default: true
+  pylint-options:
+    description: "options: pylint $(pylint-options) $(src)"
+    required: false
+    default: ""
+  pycodestyle-options:
+    description: "Extra options: pycodestyle $(pycodestyle-options) $(src)"
+    required: false
+    default: ""
+  flake8-options:
+    description: "Extra options: flake8 $(flake8-options) $(src)"
+    required: false
+    default: ""
+  black-options:
+    description: "Extra options: black $(black-options) $(src)"
+    required: false
+    default: ""
+  mypy-options:
+    description: "Extra options: mypy $(mypy-options) $(src)"
+    required: false
+    default: ""
+  isort-options:
+    description: "Extra options: isort -rc $(isort-options) $(src) "
+    required: false
+    default: ""
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.src }}
+    - ${{ inputs.use-pylint }}
+    - ${{ inputs.use-pycodestyle }}
+    - ${{ inputs.use-flake8 }}
+    - ${{ inputs.use-black }}
+    - ${{ inputs.use-mypy }}
+    - ${{ inputs.use-isort }}
+    - ${{ inputs.pylint-options }}
+    - ${{ inputs.pycodestyle-options }}
+    - ${{ inputs.flake8-options }}
+    - ${{ inputs.black-options }}
+    - ${{ inputs.mypy-options }}
+    - ${{ inputs.isort-options }}
+branding:
+  icon: "terminal"
+  color: "white"
