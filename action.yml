@@ -1,4 +1,4 @@
-name: "pythonLinter"
+name: "python-Code-Linter"
 description: "pyLinter, Lint Your Python code"
 inputs:
   src:
