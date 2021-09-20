@@ -8,27 +8,33 @@ inputs:
   use-pylint:
     description: "Use Pylint"
     required: false
-    default: true
+    default: |
+      true
   use-pycodestyle:
     description: "Use pycodestyle"
     required: false
-    default: true
+    default: |
+      true
   use-flake8:
     description: "Use Flake8"
     required: false
-    default: true
-  use-black: and
+    default: |
+      true
+  use-black:
     description: "Use Black"
     required: false
-    default: true
+    default: |
+      true
   use-mypy:
     description: "Use mypy"
     required: false
-    default: true
+    default: |
+      true
   use-isort:
     description: "Use isort"
     required: false
-    default: true
+    default: |
+      true
   pylint-options:
     description: "options: pylint $(pylint-options) $(src)"
     required: false
