@@ -1,7 +1,5 @@
 name: test
-
 on: [push]
-
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -10,11 +8,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-            python-version: "python3.x"
-      - uses: komeilparseh/pyLinter@v1
-          with:
+          python-version: "python3.x"
+      - uses: mmdbalkhi/pyLinter@v1
+        with:
           src: "test/examples/"
       - name: Test With Pytest
-          run: |
-              pip install -U pytest
-              pytest test/
+        run: |
+          pip install -U pytest
+          pytest test/

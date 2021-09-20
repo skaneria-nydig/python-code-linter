@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: KomeilParseh/pyLinter@1
+      - uses: mmdbalkhi/pyLinter@1
 ```
 
 Options:
@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: komeilparseh/python-lint@v1
+      - uses: mmdbalkhi/python-lint@v1
         with:
           src: "python_alelo tests"
           use-pylint: false

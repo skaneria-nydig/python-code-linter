@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-- 1. To contribute to this project, please [fork](https://github.com/KomeilParseh/pyLinter/fork) the project 🍴🍴🍴
+- 1. To contribute to this project, please [fork](https://github.com/mmdbalkhi/pyLinter/fork) the project 🍴🍴🍴
 
 - 2. 
 
