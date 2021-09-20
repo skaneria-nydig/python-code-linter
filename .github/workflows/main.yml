@@ -9,9 +9,9 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: "python3.x"
-      - uses: mmdbalkhi/pyLinter@v1
+      - uses: mmdbalkhi/python-code-linter@V1
         with:
-          src: "test/examples/"
+          src: "."
       - name: Test With Pytest
         run: |
           pip install -U pytest
