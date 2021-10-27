@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: mmdbalkhi/pyLinter@1
+      - uses: skaneria-nydig/python-code-linter@main
       - uses: actions/setup-python@v2
 
       - name: Test With Pytest
