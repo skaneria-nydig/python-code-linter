@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-code-linter
+  annotations:
+    github.com/project-slug: skaneria-nydig/python-code-linter
+spec:
+  type: other
+  lifecycle: unknown
+  owner: devtools-dev
